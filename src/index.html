@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <title>Frontend Mentor | Manage landing page</title>
+  </head>
+  <body class="bg-bodyBg bg-no-repeat bg-[left_4rem_top_-7rem] bg-[size:115%] md:bg-[left_12rem_top_-24rem] lg:bg-[left_50rem_top_-15rem] lg:bg-[size:53%] relative min-h-full font-BeVietnamPro">
+    <header
+    class="md:max-w-[1118px] px-3 h-fit font-PublicSans mx-auto "
+  >
+    <div
+      class="mx-auto px-6 py-10 flex justify-between items-center"
+    >
+      <div>
+        <a href="#"><img src="/images/logo.svg" alt="manage logo" /></a>
+      </div>
+
+      <div>
+        <button
+          id="hamburger-button"
+          class="text-xl z-50 lg:hidden cursor-pointer relative w-8 h-8"
+        >
+          
+          <div
+            class="bg-black w-8 h-1  absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-black before:w-8 before:h-1  before:absolute before:-translate-x-4 before:-translate-y-2 before:transition-all before:duration-500 after:content-[''] after:bg-black after:w-8 after:h-1  after:absolute after:-translate-x-4 after:translate-y-2 after:transition-all after:duration-500"
+          ></div>
+        </button>
+        <!-- md screen menu -->
+        <nav
+          class="hidden lg:flex rounded-md font-BeVietnamPro gap-y-3 text-sm space-x-8"
+          aria-label="mobile"
+        >
+          <a
+            href="#"
+            class="hover:text-DarkGrayishBlue ease-in duration-200 hover:scale-110"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="hover:text-DarkGrayishBlue ease-in duration-200 hover:scale-110"
+            >Product</a
+          >
+          <a
+            href="#"
+            class="hover:text-DarkGrayishBlue ease-in duration-200 hover:scale-110"
+            >About us</a
+          >
+          <a
+            href="#"
+            class="hover:text-DarkGrayishBlue ease-in duration-200 hover:scale-110"
+            >Careers</a
+          >
+          <a
+            href="#"
+            class="hover:text-DarkGrayishBlue ease-in duration-200 hover:scale-110"
+            aria-current="page"
+            >Community</a
+          >
+        </nav>
+      </div>
+      <button
+        type="button"
+        class="text-white shadow-[0px_6px_10px_0px_rgba(242,95,58,.4)] hidden lg:block hover:opacity-50 bg-BrightRed ease-in-out duration-150 hover:scale-105 font-normal rounded-full text-sm px-7 py-3 text-center"
+      >
+        Get Started
+      </button>
+    </div>
+
+    <!-- hamburger drop down menu -->
+    <div
+      id="mobile-menu"
+      class="absolute z-40 hidden top-28 left-0 right-0 mx-6 text-xl bg-VeryLightGray py-8 flex-col shadow-sm rounded-md justify-center items-center"
+    >
+      
+      <nav
+        class="flex flex-col justify-center items-center rounded-xl font-PublicSans text-DarkBlue gap-5 md:bg-white text-xl"
+      >
+        <a
+          href="#"
+          class="hover:text-opacity-25 ease-in duration-200 hover:scale-110"
+          >Pricing</a
+        >
+        <a
+          href="#"
+          class="hover:text-opacity-25 ease-in duration-200 hover:scale-110"
+          >Product</a
+        >
+        <a
+          href="#"
+          class="hover:text-opacity-25 ease-in duration-200 hover:scale-110"
+          >About us</a
+        >
+        <a
+          href="#"
+          class="hover:text-opacity-25 ease-in duration-200 hover:scale-110"
+          >Careers</a
+        >
+        <a
+          href="#"
+          class="hover:text-opacity-25 ease-in duration-200 hover:scale-110"
+          aria-current="page"
+          >Community</a
+        >
+      </nav>
+      
+    </div>
+    <!-- Overlay -->
+      <div id="overlay"
+        class="fixed z-30 inset-0 hidden  opacity-70"
+      ></div>
+    
+  </header>
+    <main class="md:max-w-[1118px] mx-auto">
+      <section class="px-8 max-w-[1440px] h-full mx-auto flex flex-col lg:flex-row-reverse justify-center items-center gap-8">
+        <div class="lg:w-1/2 md:-mr-4">
+          <img class="lg:w-full " src="/images/illustration-intro.svg" alt="">
+        </div>
+        <div class="lg:w-1/2 justify-center gap-8 items-center flex flex-col lg:items-start lg:justify-items-center min-h-full">
+          <h1 class="text-VeryDarkBlue lg:text-6xl text-center lg:text-start md:text-5xl text-4xl font-semibold">Bring everyone together to build better products.</h1>
+          <p class="text-center lg:text-start md:max-w-[22rem] text-DarkGrayishBlue">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+          <button
+          type="button"
+          class="text-white z-10 shadow-[0px_6px_10px_0px_rgba(242,95,58,.4)] hover:opacity-50 bg-BrightRed ease-in-out duration-150 hover:scale-105 font-normal rounded-full text-sm px-7 py-3 text-center"
+        >
+          Get Started
+        </button>
+        </div>
+      </section>
+      <section
+        class="w-full text-center md:flex flex-row justify-center items-start text-DarkBlue px-4 pt-24 pb-14 md:text-left"
+      >
+        <div class="w-full pb-20 md:w-1/2">
+          <p
+            class="text-[32px] md:text-4xl font-semibold leading-10 pb-8 md:max-w-md"
+          >
+            What’s different about Manage?
+          </p>
+          <p
+            class="text-base leading-[26px] text-DarkGrayishBlue md:max-w-[371px]"
+          >
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </div>
+        <div class="w-full md:w-1/2 text-left space-y-8">
+          <div class="w-full flex flex-col">
+            <div
+              class="w-full flex flex-row gap-x-7 items-center bg-VeryPaleRed rounded-tl-full rounded-bl-full md:bg-transparent"
+            >
+              <p
+                class="bg-BrightRed py-[7px] px-[24px] rounded-full text-VeryLightGray text-[16px]"
+              >
+                01
+              </p>
+              <p class="font-semibold text-[15px]">
+                Track company-wide progress
+              </p>
+              <p></p>
+            </div>
+            <div class="pt-2 pb-2 md:pl-[94px]">
+              <p
+                class="text-base mobile:max-w-[333px] leading-[26px] text-DarkGrayishBlue md:max-w-[438px]"
+              >
+                See how your day-to-day tasks fit into the wider vision. Go from
+                tracking progress at the milestone level all the way down to the
+                smallest of details. Never lose sight of the bigger picture
+                again.
+              </p>
+            </div>
+          </div>
+          <div class="w-full flex flex-col">
+            <div
+              class="w-full flex flex-row gap-x-7 items-center bg-VeryPaleRed rounded-tl-full rounded-bl-full md:bg-transparent"
+            >
+              <p
+                class="bg-BrightRed py-[7px] px-[24px] rounded-full text-VeryLightGray text-[16px]"
+              >
+                02
+              </p>
+              <p class="font-semibold text-[15px]">Advanced built-in reports</p>
+              <p></p>
+            </div>
+            <div class="pt-2 pb-2 md:pl-[94px]">
+              <p
+                class="text-base mobile:max-w-[333px] leading-[26px] text-DarkGrayishBlue md:max-w-[447px]"
+              >
+                Set internal delivery estimates and track progress toward
+                company goals. Our customisable dashboard helps you build out
+                the reports you need to keep key stakeholders informed.
+              </p>
+            </div>
+          </div>
+          <div class="w-full flex flex-col">
+            <div
+              class="w-full flex flex-row gap-x-7 items-center bg-VeryPaleRed rounded-tl-full rounded-bl-full md:bg-transparent"
+            >
+              <p
+                class="bg-BrightRed py-[7px] px-[24px] rounded-full text-VeryLightGray text-[16px]"
+              >
+                03
+              </p>
+              <p class="font-semibold text-[15px]">
+                Everything you need in one place
+              </p>
+              <p></p>
+            </div>
+            <div class="pt-2 pb-2 md:pl-[94px]">
+              <p
+                class="text-base mobile:max-w-[333px] leading-[26px] text-DarkGrayishBlue md:max-w-[438px]"
+              >
+                Stop jumping from one service to another to communicate, store
+                files, track tasks and share documents. Manage offers an
+                all-in-one team productivity solution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section></section>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
