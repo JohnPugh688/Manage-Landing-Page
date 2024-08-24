@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 .toggle-btn {
-    @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent
+  @apply [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div]:bg-transparent;
 }
-  
 
 @tailwind base;
 @tailwind components;

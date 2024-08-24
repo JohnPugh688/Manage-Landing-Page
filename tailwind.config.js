@@ -3,10 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     backgroundImage: {
-      'bodyBg': "url('../images/bg-tablet-pattern.svg')",
-      'mainBg': "url('../images/bg-tablet-pattern.svg')",   
-      'simplifyMobileBg': "url('../images/bg-simplify-section-mobile.svg')",
-      'simplifyBg': "url('../images/bg-simplify-section-desktop.svg')", 
+      bodyBg: "url('../images/bg-tablet-pattern.svg')",
+      mainBg: "url('../images/bg-tablet-pattern.svg')",
+      simplifyMobileBg: "url('../images/bg-simplify-section-mobile.svg')",
+      simplifyBg: "url('../images/bg-simplify-section-desktop.svg')",
     },
     extend: {
       colors: {
@@ -18,13 +18,26 @@ module.exports = {
         VeryLightGray: "hsl(0, 0%, 98%)",
       },
       screens: {
-        'mobile': {'max': '480px'},
+        mobile: { max: "480px" },
       },
       fontFamily: {
         BeVietnamPro: ["Be Vietnam Pro"],
-       
       },
     },
   },
-  plugins: [],
-}
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities(
+        {
+          ".scrollbar-hidden": {
+            "scrollbar-width": "none" /* Firefox */,
+          },
+          ".scrollbar-hidden::-webkit-scrollbar": {
+            display: "none" /* Safari and Chrome */,
+          },
+        },
+        ["responsive", "hover"],
+      );
+    },
+  ],
+};
