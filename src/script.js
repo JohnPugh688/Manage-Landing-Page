@@ -38,6 +38,7 @@ const setupHamburgerMenu = () => {
  * Sets up the testimonial slider functionality
  * - Updates the dot navigation based on scroll position
  * - Allows users to click on dots to scroll to specific testimonials
+ * - Adds mouse drag and touch swipe functionality for scrolling
  */
 const setupTestimonialSlider = () => {
   const container = document.getElementById("testimonial-container");
@@ -76,6 +77,47 @@ const setupTestimonialSlider = () => {
       });
     });
   });
+
+  // Add mouse dragging and touch swiping functionality
+
+  // Variables to track dragging state
+  let isDragging = false;
+  let startX;
+  let scrollStart;
+
+  // Function to handle the start of dragging
+  const startDragging = (e) => {
+    isDragging = true;
+    startX = e.pageX || e.touches[0].pageX;
+    scrollStart = container.scrollLeft;
+    container.classList.add("active"); // Optional: add a class while dragging
+  };
+
+  // Function to handle dragging movement
+  const duringDragging = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX || e.touches[0].pageX;
+    const walk = (x - startX) * 3; // Multiply for faster scrolling
+    container.scrollLeft = scrollStart - walk;
+  };
+
+  // Function to handle the end of dragging
+  const stopDragging = () => {
+    isDragging = false;
+    container.classList.remove("active"); // Optional: remove the class after dragging
+  };
+
+  // Event listeners for mouse dragging
+  container.addEventListener("mousedown", startDragging);
+  container.addEventListener("mousemove", duringDragging);
+  container.addEventListener("mouseleave", stopDragging);
+  container.addEventListener("mouseup", stopDragging);
+
+  // Event listeners for touch swiping
+  container.addEventListener("touchstart", startDragging);
+  container.addEventListener("touchmove", duringDragging);
+  container.addEventListener("touchend", stopDragging);
 };
 
 /**
