@@ -13,10 +13,12 @@
     <title>Frontend Mentor | Manage landing page</title>
   </head>
   <body
-    class="relative mx-auto min-h-full bg-bodyBg bg-[size:115%] bg-[left_4rem_top_-7rem] bg-no-repeat font-BeVietnamPro md:bg-[left_12rem_top_-24rem] lg:w-[1118px] lg:bg-[size:53%] lg:bg-[left_50rem_top_-15rem]"
+    class="relative mx-auto min-h-full bg-bodyBg bg-[size:115%] bg-[left_4rem_top_-7rem] bg-no-repeat font-BeVietnamPro md:bg-[left_12rem_top_-24rem] lg:bg-[size:53%] lg:bg-[left_50rem_top_-15rem]"
   >
-    <header class="font-PublicSans mx-auto h-fit px-3 md:max-w-[1118px]">
-      <div class="mx-auto flex items-center justify-between px-6 py-10">
+    <header class="font-PublicSans mx-auto h-fit px-3 md:max-w-[75rem] lg:px-8">
+      <div
+        class="mx-auto flex items-center justify-between px-6 py-10 lg:px-3 lg:py-14"
+      >
         <div>
           <a href="#"><img src="/images/logo.svg" alt="manage logo" /></a>
         </div>
@@ -116,10 +118,10 @@
       <!-- OVERLAY END -->
     </header>
     <main
-      class="mx-auto bg-mainBg bg-[size:83%] bg-[left_15rem_top_24rem] bg-no-repeat md:w-[1118px]"
+      class="mx-auto w-full bg-mainBg bg-[size:83%] bg-[left_15rem_top_24rem] bg-no-repeat md:bg-[right_46rem_top_75rem] lg:bg-[size:53%] lg:bg-[right_72rem_top_52rem]"
     >
       <section
-        class="mx-auto flex h-full max-w-[1440px] flex-col items-center justify-center gap-5 px-8 md:gap-8 lg:flex-row-reverse"
+        class="mx-auto flex h-full flex-col items-center justify-center gap-5 px-8 md:gap-1 lg:w-[75rem] lg:flex-row-reverse lg:px-10 lg:pt-14"
       >
         <div class="md:-mr-4 lg:w-1/2">
           <img class="lg:w-full" src="/images/illustration-intro.svg" alt="" />
@@ -128,7 +130,7 @@
           class="flex min-h-full flex-col items-center justify-center gap-2 lg:w-1/2 lg:items-start lg:justify-items-center"
         >
           <h1
-            class="text-center text-4xl font-semibold leading-snug text-VeryDarkBlue md:text-5xl lg:text-start lg:text-6xl"
+            class="text-center text-4xl font-semibold leading-snug text-VeryDarkBlue md:text-5xl lg:text-start lg:text-[3.3rem]"
           >
             Bring everyone together to build better products.
           </h1>
@@ -147,39 +149,39 @@
         </div>
       </section>
       <section
-        class="w-full flex-row items-start justify-center pb-14 pt-20 text-center text-DarkBlue md:flex md:text-left"
+        class="mx-auto w-full flex-row items-start justify-center pb-14 pt-20 text-center text-DarkBlue md:flex md:px-20 md:text-left lg:w-[75rem] lg:px-11 lg:pt-28"
       >
-        <div class="w-full px-5 pb-16 md:w-1/2">
+        <div class="w-full px-5 pb-16 md:w-1/2 md:px-0">
           <h2
-            class="pb-4 text-3xl font-semibold leading-10 md:max-w-md md:text-4xl"
+            class="pb-4 text-3xl font-semibold leading-10 md:max-w-md md:text-[2.4rem]"
           >
             What’s different about Manage?
           </h2>
           <p
-            class="px-4 text-sm font-thin leading-7 text-DarkGrayishBlue md:max-w-[371px]"
+            class="px-4 text-sm font-thin leading-7 text-DarkGrayishBlue md:max-w-[20rem] md:px-0 md:text-base"
           >
             Manage provides all the functionality your team needs, without the
             complexity. Our software is tailor-made for modern digital product
             teams.
           </p>
         </div>
-        <div class="w-full space-y-11 pl-4 text-left md:w-1/2">
+        <div class="w-full space-y-11 pl-4 text-left md:w-1/2 lg:space-y-8">
           <div class="flex w-full flex-col">
             <div
-              class="flex w-full flex-row items-center gap-x-5 rounded-bl-full rounded-tl-full bg-VeryPaleRed md:bg-transparent"
+              class="flex w-full flex-row items-center gap-x-5 rounded-bl-full rounded-tl-full bg-VeryPaleRed md:gap-x-7 md:bg-transparent"
             >
               <p
                 class="rounded-full bg-BrightRed px-6 py-2 text-base text-VeryLightGray"
               >
                 01
               </p>
-              <h3 class="text-base font-semibold">
+              <h3 class="text-sm font-semibold lg:text-[0.940rem]">
                 Track company-wide progress
               </h3>
             </div>
             <div class="pb-2 pt-2 md:pl-[94px]">
               <p
-                class="text-sm font-thin leading-[26px] text-DarkGrayishBlue md:max-w-[438px] mobile:max-w-[333px]"
+                class="text-sm font-thin leading-[26px] text-DarkGrayishBlue md:max-w-[438px] md:text-[1rem] mobile:max-w-[333px]"
               >
                 See how your day-to-day tasks fit into the wider vision. Go from
                 tracking progress at the milestone level all the way down to the
@@ -190,20 +192,20 @@
           </div>
           <div class="flex w-full flex-col">
             <div
-              class="flex w-full flex-row items-center gap-x-5 rounded-bl-full rounded-tl-full bg-VeryPaleRed md:bg-transparent"
+              class="flex w-full flex-row items-center gap-x-5 rounded-bl-full rounded-tl-full bg-VeryPaleRed md:gap-x-7 md:bg-transparent"
             >
               <p
-                class="rounded-full bg-BrightRed px-[24px] py-[7px] text-[16px] text-VeryLightGray"
+                class="rounded-full bg-BrightRed px-[24px] py-[7px] text-base text-VeryLightGray"
               >
                 02
               </p>
-              <h3 class="text-[15px] font-semibold">
+              <h3 class="text-[15px] font-semibold lg:text-[0.940rem]">
                 Advanced built-in reports
               </h3>
             </div>
             <div class="pb-2 pt-2 md:pl-[94px]">
               <p
-                class="text-sm font-thin leading-[26px] text-DarkGrayishBlue md:max-w-[447px] mobile:max-w-[333px]"
+                class="text-sm font-thin leading-[26px] text-DarkGrayishBlue md:max-w-[447px] md:text-[1rem] mobile:max-w-[333px]"
               >
                 Set internal delivery estimates and track progress toward
                 company goals. Our customizable dashboard helps you build out
@@ -213,20 +215,20 @@
           </div>
           <div class="flex w-full flex-col">
             <div
-              class="flex w-full flex-row items-center gap-x-5 rounded-bl-full rounded-tl-full bg-VeryPaleRed md:bg-transparent"
+              class="flex w-full flex-row items-center gap-x-5 rounded-bl-full rounded-tl-full bg-VeryPaleRed md:gap-x-7 md:bg-transparent"
             >
               <p
                 class="rounded-full bg-BrightRed px-[24px] py-[7px] text-[16px] text-VeryLightGray"
               >
                 03
               </p>
-              <h3 class="text-[15px] font-semibold">
+              <h3 class="text-[15px] font-semibold lg:text-[0.940rem]">
                 Everything you need in one place
               </h3>
             </div>
             <div class="pb-2 pt-2 md:pl-[94px]">
               <p
-                class="text-sm font-thin leading-[26px] text-DarkGrayishBlue md:max-w-[438px] mobile:max-w-[333px]"
+                class="text-sm font-thin leading-[26px] text-DarkGrayishBlue md:max-w-[438px] md:text-[1rem] mobile:max-w-[333px]"
               >
                 Stop jumping from one service to another to communicate, store
                 files, track tasks and share documents. Manage offers an
@@ -239,14 +241,19 @@
 
       <!-- TESTIMONIAL SECTION -->
 
-      <section class="items-center gap-24">
-        <h2 class="text-center text-3xl font-semibold">What they've said</h2>
+      <section class="w-full items-center gap-24 lg:pt-[6rem]">
+        <h2 class="text-center text-3xl font-bold lg:text-4xl">
+          What they've said
+        </h2>
 
         <!-- SLIDER START -->
 
-        <ul class="scrollbar-hidden flex w-full overflow-x-scroll pt-24">
+        <ul
+          id="testimonial-container"
+          class="flex w-full snap-x snap-mandatory overflow-x-scroll scroll-smooth pt-24 scrollbar-hidden lg:pt-28"
+        >
           <li
-            class="relative mb-4 ml-4 flex w-[22rem] flex-shrink-0 flex-col items-center justify-center gap-4 rounded-md bg-VeryLightGray px-8 py-4 pt-12"
+            class="relative mb-4 ml-4 flex w-[22rem] flex-shrink-0 snap-center flex-col items-center justify-center gap-4 rounded-md bg-VeryLightGray px-8 py-4 pt-12 sm:w-[24rem] md:w-[28rem] lg:h-[13.5rem] lg:w-[32rem] lg:pt-8"
           >
             <img
               class="absolute -top-10 h-[4.5rem] w-[4.5rem]"
@@ -254,78 +261,90 @@
               alt="alisha lee"
             />
             <h3 class="font-medium">Alisha Lee</h3>
-            <p class="text-center text-sm font-thin leading-6">
+            <p
+              class="text-center text-sm font-thin leading-6 text-DarkGrayishBlue lg:text-base"
+            >
               "Manage has supercharged our team's workflow. The ability to
               maintain visibility on larger milestones at all times keeps
               everyone motivated"
             </p>
           </li>
           <li
-            class="relative mb-4 ml-4 flex h-60 w-[22rem] flex-shrink-0 flex-col items-center justify-center gap-4 rounded-md bg-VeryLightGray px-8 py-4 pt-12"
+            class="sn relative mb-4 ml-4 flex h-60 w-[22rem] flex-shrink-0 snap-center flex-col items-center justify-center gap-4 rounded-md bg-VeryLightGray px-8 py-4 pt-12 sm:w-[24rem] md:w-[28rem] lg:h-[13.5rem] lg:w-[32rem] lg:pt-8"
           >
             <img
               class="absolute -top-10 h-[4.5rem] w-[4.5rem]"
-              src="/images/avatar-anisha.png"
+              src="/images/avatar-ali.png"
               alt="alisha lee"
             />
-            <h3 class="font-medium">Alisha Lee</h3>
-            <p class="text-center text-sm font-thin leading-6">
-              "Manage has supercharged our team's workflow. The ability to
-              maintain visibility on larger milestones at all times keeps
-              everyone motivated"
+            <h3 class="font-medium">Ali Bravo</h3>
+            <p
+              class="text-center text-sm font-thin leading-6 text-DarkGrayishBlue lg:text-base"
+            >
+              “We have been able to cancel so many other subscriptions since
+              using Manage. There is no more cross-channel confusion and
+              everyone is much more focused.”
             </p>
           </li>
           <li
-            class="relative mb-4 ml-4 flex h-60 w-[22rem] flex-shrink-0 flex-col items-center justify-center gap-4 rounded-md bg-VeryLightGray p-4 pt-12"
+            class="relative mb-4 ml-4 flex h-60 w-[22rem] flex-shrink-0 snap-center flex-col items-center justify-center gap-4 rounded-md bg-VeryLightGray p-4 pt-12 sm:w-[24rem] md:w-[28rem] lg:h-[13.5rem] lg:w-[32rem] lg:pt-8"
           >
             <img
               class="absolute -top-10 h-[4.5rem] w-[4.5rem]"
-              src="/images/avatar-anisha.png"
+              src="/images/avatar-richard.png"
               alt="alisha lee"
             />
-            <h3 class="font-medium">Alisha Lee</h3>
-            <p class="text-center text-sm font-thin leading-6">
-              "Manage has supercharged our team's workflow. The ability to
-              maintain visibility on larger milestones at all times keeps
-              everyone motivated"
+            <h3 class="font-medium">Richard Watts</h3>
+            <p
+              class="text-center text-sm font-thin leading-6 text-DarkGrayishBlue lg:text-base"
+            >
+              “Manage allows us to provide structure and process. It keeps us
+              organized and focused. I can’t stop recommending them to everyone
+              I talk to!”
             </p>
           </li>
           <li
-            class="relative mb-4 ml-4 flex h-60 w-[22rem] flex-shrink-0 flex-col items-center justify-center gap-4 rounded-md bg-VeryLightGray p-4 pt-12"
+            class="relative mb-4 ml-4 flex h-60 w-[22rem] flex-shrink-0 snap-center flex-col items-center justify-center gap-4 rounded-md bg-VeryLightGray p-4 pt-12 sm:w-[24rem] md:w-[28rem] lg:h-[13.5rem] lg:w-[32rem] lg:pt-8"
           >
             <img
               class="absolute -top-10 h-[4.5rem] w-[4.5rem]"
-              src="/images/avatar-anisha.png"
+              src="/images/avatar-shanai.png"
               alt="alisha lee"
             />
-            <h3 class="font-medium">Alisha Lee</h3>
-            <p class="text-center text-sm font-thin leading-6">
-              "Manage has supercharged our team's workflow. The ability to
-              maintain visibility on larger milestones at all times keeps
-              everyone motivated"
+            <h3 class="font-medium">Shanai Gough</h3>
+            <p
+              class="text-center text-sm font-thin leading-6 text-DarkGrayishBlue"
+            >
+              “Their software allows us to track, manage and collaborate on our
+              projects from anywhere. It keeps the whole team in-sync without
+              being intrusive.”
             </p>
           </li>
         </ul>
         <!-- SLIDER END -->
-        <div
-          class="bottom-18 absolute left-1/2 flex -translate-x-1/2 transform gap-1"
-        >
+        <div id="dot-navigation" class="flex justify-center gap-1 md:hidden">
           <span
-            class="dot h-2 w-2 cursor-pointer rounded-full border border-BrightRed"
+            data-index="0"
+            class="dot h-2 w-2 cursor-pointer rounded-full border border-BrightRed bg-white"
           ></span>
           <span
-            class="dot h-2 w-2 cursor-pointer rounded-full border border-BrightRed"
+            data-index="1"
+            class="dot h-2 w-2 cursor-pointer rounded-full border border-BrightRed bg-white"
           ></span>
           <span
-            class="dot h-2 w-2 cursor-pointer rounded-full border border-BrightRed"
+            data-index="2"
+            class="dot h-2 w-2 cursor-pointer rounded-full border border-BrightRed bg-white"
           ></span>
           <span
-            class="dot h-2 w-2 cursor-pointer rounded-full border border-BrightRed"
+            data-index="3"
+            class="dot h-2 w-2 cursor-pointer rounded-full border border-BrightRed bg-white"
           ></span>
         </div>
 
         <!-- Get Started Button -->
-        <div class="my-14 text-center">
+        <div
+          class="mb-10 mt-14 flex w-full justify-center text-center md:mt-12 lg:mt-8"
+        >
           <button
             id="get-started-button"
             class="rounded-full bg-BrightRed px-7 py-3 text-center text-sm font-normal text-white shadow-[0px_6px_10px_0px_rgba(242,95,58,.4)] duration-150 ease-in-out hover:scale-105 hover:opacity-50 lg:block"
@@ -334,8 +353,212 @@
           </button>
         </div>
       </section>
+      <section
+        class="mx-auto w-full bg-BrightRed bg-simplifyMobileBg bg-left bg-no-repeat py-10 md:mt-20 md:bg-simplifyBg md:py-6 lg:mt-44 lg:bg-right-bottom"
+      >
+        <div
+          class="mx-auto flex w-full flex-col items-center justify-center gap-7 px-9 py-16 leading-10 md:flex-row md:justify-between md:px-10 md:py-12 lg:w-[75rem] lg:px-10"
+        >
+          <h2
+            class="text-center text-4xl font-semibold text-white lg:w-1/2 lg:text-start lg:text-[2.5rem]"
+          >
+            Simplify how your team works today.
+          </h2>
+          <button
+            class="rounded-full bg-white px-7 py-3 text-center text-sm font-normal text-BrightRed shadow-[0px_6px_10px_0px_rgba(242,95,58,.4)] duration-150 ease-in-out hover:scale-105 hover:opacity-85 lg:block"
+          >
+            Get Started
+          </button>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <!-- FOOTER START -->
+    <footer class="font-PublicSans bg-VeryDarkBlue">
+      <div
+        class="mx-auto flex w-full max-w-[75rem] flex-col justify-between gap-8 p-4 py-6 md:flex-row-reverse md:gap-0 md:py-10"
+      >
+        <!-- FORM CONTAINER START -->
+        <div
+          class="flex w-full flex-col items-center bg-VeryDarkBlue py-4 md:flex"
+        >
+          <div
+            class="h-full w-full max-w-md flex-col justify-between px-4 md:flex lg:px-16"
+          >
+            <div>
+              <form id="email-form" class="flex w-full items-center">
+                <!-- Email Input -->
+                <input
+                  id="email-input"
+                  type="text"
+                  placeholder="Update in your inbox..."
+                  class="w-full appearance-none rounded-full px-4 py-3.5 text-xs text-BrightRed placeholder:text-DarkGrayishBlue focus:outline-none"
+                />
+                <!-- Submit Button -->
+                <button
+                  type="submit"
+                  class="ml-2 rounded-full bg-BrightRed px-8 py-3.5 text-center text-xs font-normal text-white shadow-[0px_6px_10px_0px_rgba(242,95,58,.4)] duration-150 ease-in-out hover:scale-105 hover:opacity-75 lg:block lg:px-6"
+                >
+                  Go
+                </button>
+              </form>
+              <p
+                id="error-message"
+                class="mt-2 hidden px-6 text-xs text-BrightRed"
+              >
+                Please insert a valid email.
+              </p>
+            </div>
+            <!-- Error Message -->
+
+            <div
+              class="flex hidden flex-col items-center justify-center gap-6 text-end md:block"
+            >
+              <h3 class="text-xs font-thin text-DarkGrayishBlue">
+                Copyright 2024. All Rights Reserved
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- FORM CONTAINER END -->
+        <div class="w-full md:pr-16 lg:pr-20">
+          <ul
+            class="flex justify-between gap-3 px-10 py-5 text-sm font-thin text-VeryLightGray md:flex-row md:gap-20 md:px-0"
+          >
+            <li class="flex flex-col items-start gap-3 md:gap-4">
+              <a
+                class="duration-200 ease-in hover:scale-110 hover:text-BrightRed"
+                href="#"
+                >Home</a
+              >
+              <a
+                class="duration-200 ease-in hover:scale-110 hover:text-BrightRed"
+                href="#"
+                >Pricing</a
+              >
+              <a
+                class="duration-200 ease-in hover:scale-110 hover:text-BrightRed"
+                href="#"
+                >Products</a
+              >
+              <a
+                class="duration-200 ease-in hover:scale-110 hover:text-BrightRed"
+                href="#"
+                >About Us</a
+              >
+            </li>
+            <li class="flex flex-col items-start gap-3 md:gap-4">
+              <a
+                class="duration-200 ease-in hover:scale-110 hover:text-BrightRed"
+                href="#"
+                >Careers</a
+              >
+              <a
+                class="duration-200 ease-in hover:scale-110 hover:text-BrightRed"
+                href="#"
+                >Community</a
+              >
+              <a
+                class="duration-200 ease-in hover:scale-110 hover:text-BrightRed"
+                href="#"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="w-full md:flex md:w-3/4 md:flex-col-reverse md:items-start md:justify-between md:pb-5"
+        >
+          <ul class="flex justify-between gap-4 px-5 md:justify-center">
+            <li>
+              <a href="#"
+                ><img
+                  class="w-8 md:w-full"
+                  src="/images/icon-facebook.svg"
+                  alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="w-8 md:w-full"
+                  src="/images/icon-youtube.svg"
+                  alt="youtube"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="w-8 md:w-full"
+                  src="/images/icon-twitter.svg"
+                  alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="w-8 md:w-full"
+                  src="/images/icon-pinterest.svg"
+                  alt="pinterest"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="w-8 hover:fill-BrightRed md:w-full"
+                  src="/images/icon-instagram.svg"
+                  alt="instagram"
+              /></a>
+            </li>
+          </ul>
+          <div class="flex flex-col gap-3 md:gap-12">
+            <div
+              class="mdpl2 mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
+            >
+              <a href="#" class="flex items-center space-x-3 md:pl-2">
+                <img
+                  src="/images/White logo.svg"
+                  class="h-7 md:h-6"
+                  alt="white logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-6 md:hidden">
+          <h3 class="text-xs font-thin text-DarkGrayishBlue">
+            Copyright 2024. All Rights Reserved
+          </h3>
+        </div>
+      </div>
+    </footer>
+    <!-- Success Popup -->
+    <div
+      id="success-popup"
+      class="fixed inset-0 z-50 flex hidden items-center justify-center"
+    >
+      <!-- Background Blur -->
+      <div class="absolute inset-0 bg-gray-800 opacity-50"></div>
+
+      <!-- Popup Content -->
+      <div
+        class="relative z-10 mx-4 max-w-sm rounded-lg bg-white p-8 shadow-lg"
+      >
+        <h2 class="mb-4 text-2xl font-semibold text-VeryDarkBlue">
+          Thank You!
+        </h2>
+        <p class="mb-6 text-sm text-DarkGrayishBlue">
+          Your email has been received. We will get back to you in the near
+          future.
+        </p>
+        <button
+          id="close-popup"
+          class="w-full rounded-full bg-BrightRed px-7 py-3 text-center text-sm font-normal text-white shadow-[0px_6px_10px_0px_rgba(242,95,58,.4)] duration-150 ease-in-out hover:scale-105 hover:opacity-50"
+        >
+          Return to Homepage
+        </button>
+      </div>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>

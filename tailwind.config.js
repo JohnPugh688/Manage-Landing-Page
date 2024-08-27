@@ -25,6 +25,13 @@ module.exports = {
       },
     },
   },
+  variants: {
+    extend: {
+      ringColor: ["peer-invalid"],
+      borderColor: ["peer-invalid"],
+      ringWidth: ["peer-invalid"],
+    },
+  },
   plugins: [
     function ({ addUtilities }) {
       addUtilities(
