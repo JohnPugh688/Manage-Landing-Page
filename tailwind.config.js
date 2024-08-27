@@ -3,10 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     backgroundImage: {
-      bodyBg: "url('../images/bg-tablet-pattern.svg')",
-      mainBg: "url('../images/bg-tablet-pattern.svg')",
-      simplifyMobileBg: "url('../images/bg-simplify-section-mobile.svg')",
-      simplifyBg: "url('../images/bg-simplify-section-desktop.svg')",
+      bodyBg: "url('./images/bg-tablet-pattern.svg')",
+      mainBg: "url('./images/bg-tablet-pattern.svg')",
+      simplifyMobileBg: "url('./images/bg-simplify-section-mobile.svg')",
+      simplifyBg: "url('./images/bg-simplify-section-desktop.svg')",
     },
     extend: {
       colors: {
